@@ -1,7 +1,7 @@
 # ASTON COURSE HOMEWORK
 
 ## Содержание
-1. [Git. Алгоритмы и структуры данных](#алгоритмы-и-структуры-данных)
+1. [Git. Алгоритмы и структуры данных](#git-алгоритмы-и-структуры-данных)
 
 ---
 
@@ -108,6 +108,6 @@ public V remove(Object key) {
 
 #### Результат
 
-<!-- Вставить скрин -->
+<img width="1071" height="364" alt="Screenshot_2" src="https://github.com/user-attachments/assets/b8bbe6ba-4dad-492b-8bc1-4387887d94c8" />
 
 [⬆️ К содержанию](#содержание)
