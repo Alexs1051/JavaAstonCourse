@@ -140,7 +140,8 @@ System.out.println("containsKey('two'): " + map.containsKey("two"));
 
 ### Результат
 
-<img width="1071" height="364" alt="Screenshot_2" src="https://github.com/user-attachments/assets/b8bbe6ba-4dad-492b-8bc1-4387887d94c8" />
+<img width="604" height="206" alt="Screenshot_7" src="https://github.com/user-attachments/assets/50e135a1-fa71-495e-b871-43f7889005e1" />
+<img width="623" height="710" alt="Screenshot_8" src="https://github.com/user-attachments/assets/c0a76d04-0987-4922-885a-c9b328212420" />
 
 ### Исправления
 
