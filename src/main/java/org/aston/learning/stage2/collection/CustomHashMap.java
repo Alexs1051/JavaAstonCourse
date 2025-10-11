@@ -68,11 +68,11 @@ public class CustomHashMap<K, V> {
     }
 
     // Вспомогательный метод для округления до степени двойки
-    private int roundUpToPowerOf2(int number) {
+    public int roundUpToPowerOf2(int number) {
         if (number > MAX_CAPACITY) {
             return MAX_CAPACITY;
         }
-        if (number < 1) {
+        if (number <= 1) {
             return 1;
         }
         return Integer.highestOneBit(number - 1) << 1;
@@ -257,7 +257,24 @@ public class CustomHashMap<K, V> {
      * Проверяет наличие ключа в Map
      */
     public boolean containsKey(Object key) {
-        return get(key) != null;
+        if (key == null) {
+            for (Entry<K, V> e = table[0]; e != null; e = e.next) {
+                if (e.key == null) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        int hash = hash(key);
+        int index = indexFor(hash, table.length);
+
+        for (Entry<K, V> e = table[index]; e != null; e = e.next) {
+            if (e.hash == hash && (key == e.key || key.equals(e.key))) {
+                return true;
+            }
+        }
+        return false;
     }
 
     /**
